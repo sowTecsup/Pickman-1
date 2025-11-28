@@ -18,8 +18,7 @@ public class EnemyControl : MonoBehaviour
 
     void Start()
     {
-        
-       // Target = GameObject.FindGameObjectWithTag("Player");
+       
     }
 
     
@@ -54,7 +53,6 @@ public class EnemyControl : MonoBehaviour
              scale.x *= -1;
              transform.localScale = scale;
          }
-
      }
 
     public Transform GetTransform()
@@ -70,7 +68,5 @@ public class EnemyControl : MonoBehaviour
 
             transform.position += normalizedDir * speed * Time.deltaTime;
 
-        
-        
     }
 }
