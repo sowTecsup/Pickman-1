@@ -1,10 +1,8 @@
-using System.Runtime.InteropServices;
-using UnityEditor.Tilemaps;
+
 using UnityEngine;
 
 public class EnemyControl : MonoBehaviour
 {
-    public GameObject Target;
 
     [SerializeField] private Transform player;
     [SerializeField] private float speed;
@@ -18,7 +16,7 @@ public class EnemyControl : MonoBehaviour
 
     void Start()
     {
-       
+       player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();   
     }
 
     
@@ -63,7 +61,7 @@ public class EnemyControl : MonoBehaviour
     public void MoveToTarget()
     {
        
-            Vector3 dir = Target.transform.position - transform.position;
+            Vector3 dir = player.position - transform.position;
             Vector3 normalizedDir = dir.normalized;
 
             transform.position += normalizedDir * speed * Time.deltaTime;

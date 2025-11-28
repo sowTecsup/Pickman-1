@@ -105,7 +105,7 @@ MonoBehaviour:
   player: {fileID: 0}
   speed: 3
   range: 5
-  life: 10
+  life: 2
 --- !u!61 &6244823776597057931
 BoxCollider2D:
   m_ObjectHideFlags: 0

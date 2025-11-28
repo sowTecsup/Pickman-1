@@ -16,7 +16,6 @@ public class Spawn : MonoBehaviour
     void Update()
     {
         currentTime += Time.deltaTime;
-        print(currentTime);
         if (currentTime >= generatecFrec)
         {
             GenerateEnemy();
